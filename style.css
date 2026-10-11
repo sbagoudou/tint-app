@@ -1,0 +1,43 @@
+/* Tint's chrome: neutral greys only; color comes from paint. Tokens from the app's TintTokens. */
+:root {
+  --booth: #ececea;
+  --paper: #ffffff;
+  --ink: #000000;
+  --ink-muted: #5c5c5a;
+  --hairline: #d4d4d1;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --booth: #1a1a1a;
+    --paper: #262626;
+    --ink: #ffffff;
+    --ink-muted: #a3a3a0;
+    --hairline: #3a3a3a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--booth);
+  color: var(--ink);
+  font: 17px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 680px; margin: 0 auto; padding: 48px 24px 64px; }
+header { display: flex; align-items: center; gap: 12px; margin-bottom: 32px; }
+.chips { display: flex; }
+.chips span { width: 14px; height: 18px; border-radius: 3px; margin-right: -4px; }
+.wordmark { font-weight: 700; font-size: 22px; letter-spacing: -0.04em; color: var(--ink); text-decoration: none; }
+h1 { font-size: 34px; line-height: 1.15; letter-spacing: -0.02em; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 36px 0 8px; }
+p, li { color: var(--ink); }
+.muted { color: var(--ink-muted); font-size: 15px; }
+ul { padding-left: 20px; }
+li { margin-bottom: 6px; }
+a { color: var(--ink); }
+.card { background: var(--paper); border-radius: 16px; padding: 4px 20px; margin-top: 16px; }
+.card h3 { font-size: 17px; margin: 16px 0 4px; }
+.card p { margin: 0 0 16px; }
+.card + .card { margin-top: 8px; }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--hairline); }
+footer a { margin-right: 16px; }
